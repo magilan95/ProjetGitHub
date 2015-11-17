@@ -4,11 +4,11 @@ apply plugin: 'jacoco'
 apply plugin: 'findbugs'
 
 repositories {
-    mavenCentral()
+    mavenCentral() 
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.+'
+    testCompile 'junit:junit:4.12'
 }
 
 test {
@@ -25,6 +25,6 @@ jacocoTestReport{
 
 findbugs{
 	toolVersion ="3.0.1" 
-	effort = "max"
-	reportLevel="low"	
+	effort = "min"
+	reportLevel="high"	
 }
