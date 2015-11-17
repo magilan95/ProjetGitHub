@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRecherche" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-11-17T10:18:10" hostname="r30217" time="0.01">
+  <properties/>
+  <testcase name="recherchecroissant" classname="TestRecherche" time="0.004"/>
+  <testcase name="recherchedecroissant" classname="TestRecherche" time="0.006"/>
+  <system-out><![CDATA[2
+pas trouvé
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

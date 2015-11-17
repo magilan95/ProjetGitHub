@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>tri.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ProjetGitHub</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">tri.java</span></div><h1>tri.java</h1><pre class="source lang-java linenums">
+<span class="fc" id="L2">public class tri {</span>
+
+			
+	
+	
+public int[] croissant(int tab[]){
+<span class="fc" id="L8">	int n = tab.length ;</span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">	for (int j=0;j&lt;n;j++) {</span>
+<span class="fc bfc" id="L10" title="All 2 branches covered.">		for (int i=1;i&lt;n;i++) {</span>
+<span class="fc bfc" id="L11" title="All 2 branches covered.">			if (tab[i]&lt;tab[i-1]) { </span>
+<span class="fc" id="L12">				int u = 0;</span>
+<span class="fc" id="L13">				u = tab[i];</span>
+<span class="fc" id="L14">				tab[i] = tab[i-1];</span>
+<span class="fc" id="L15">				tab[i-1] = u;</span>
+			}
+		}
+	}
+<span class="fc" id="L19">	return tab;</span>
+	
+	
+}
+
+public int[] decroissant(int tab[]){
+<span class="fc" id="L25">	int n = tab.length ;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">	for (int j=0;j&lt;n;j++) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">		for (int i=1;i&lt;n;i++) {</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">			if (tab[i]&gt;tab[i-1]) { </span>
+<span class="fc" id="L29">				int u = 0;</span>
+<span class="fc" id="L30">				u = tab[i];</span>
+<span class="fc" id="L31">				tab[i] = tab[i-1];</span>
+<span class="fc" id="L32">				tab[i-1] = u;</span>
+			}
+		}
+	}
+<span class="fc" id="L36">	return tab;</span>
+	
+	
+}
+
+public String toString(int tab[]){
+	
+<span class="fc" id="L43">	int n = tab.length;</span>
+<span class="fc" id="L44">	String d = new String();</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">	for (int i=0;i&lt;n;i++) {</span>
+<span class="fc" id="L46">		d = d + tab[i] + &quot; &quot;;</span>
+	}
+	
+<span class="fc" id="L49">	return d;</span>
+	
+}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
