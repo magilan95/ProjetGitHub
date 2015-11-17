@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTri" tests="3" skipped="0" failures="0" errors="0" timestamp="2015-11-10T11:09:10" hostname="r30205" time="0.014">
+  <properties/>
+  <testcase name="canConsTriCroisssant" classname="TestTri" time="0.009"/>
+  <testcase name="canConsTriDecroissant" classname="TestTri" time="0.001"/>
+  <testcase name="canToString" classname="TestTri" time="0.0"/>
+  <system-out><![CDATA[0 1 -5 2 4 11 6 3 21 13 45 
+-5 0 1 2 3 4 6 11 13 21 45 
+0 1 -5 2 4 11 6 3 21 13 45 
+45 21 13 11 6 4 3 2 1 0 -5 
+0 1 -5 2 4 11 6 3 21 13 45 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
